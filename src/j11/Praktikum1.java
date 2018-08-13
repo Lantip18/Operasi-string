@@ -1,5 +1,8 @@
 
 package j11;
+
+import java.util.Locale;
+
 public class Praktikum1 {
     public static void main(String[] args) {
         String identitas = "Lantip Mukti M. / X RPL 3 / 18";
@@ -56,13 +59,19 @@ public class Praktikum1 {
         
         String[] arrT = tolean.split("");
         System.out.println("pecah kata di variable tolean : ");
-        for(int i = 0; i<arrT.length;i++)
+        for(int i=0; i<arrT.length;i++)
             System.out.println(arrT[i]);
         
         String[] arrTr = tolean.split("r");
         System.out.println("pecah berdasarkan huruf 'r' di variable tolean : ");
-        for(int i = 0;i<arrTr.length;i++)
+        for(int i=0;i<arrTr.length;i++)
             System.out.println(arrTr[i]);
+        
+        double d = 1545454000;
+        System.out.println(String.format("Uang saya %,.4f", d));
+        
+        System.out.println(String.format(Locale.forLanguageTag("in-ID"),"Uang saya Rp %,.2f", d));
+        
     }
     
 }
