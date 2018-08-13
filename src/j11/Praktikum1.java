@@ -14,6 +14,17 @@ public class Praktikum1 {
         System.out.println("isi variable y : " + y);
         System.out.println("y adalah kosong : "+ y.isEmpty());
         
+        System.out.println("isi x sama dengan y : " + x.equals(y));
+        
+        String z = "Opersai";
+        System.out.println("isi variable x : " + z);
+        System.out.println("isi x sama dengan z (Case Sensitive): " + x.equals(z));
+        
+        String r = "Operasi";
+        System.out.println("isi variable r : "+ z);
+        System.out.println("isi x sama dengan r (Case Sensitive) : " + x.equals(r));
+        System.out.println("isi x sama dengan r (Not Case Sensitive) : "+ x.equalsIgnoreCase(r));
+        
     }
     
 }
