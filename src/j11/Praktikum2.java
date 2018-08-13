@@ -1,21 +1,28 @@
+
 package j11;
-import java.util.Scanner;
+import java.util.*;
 public class Praktikum2 {
-    public static void tampilJudul(String identitas){
-        System.out.println("Identitas : " + identitas);
-        System.out.println("\nConvert Kalimat Alay Angka (Vokal Ke Angka)\n");
-        
-        String identitas = "Lantip Mukti M. / X RPL 3 / 18";
-        
-        tampilJudul(identitas);
+    public static void tampilJudul(String identitas)
+    {
+        System.out.println("Identitas" + identitas);
+        System.out.println("\nConvert Kalimat Alay Angka (Vokal ke Angka\n");
     }
-    private static String tampilInput(){
-       Scanner sc = new Scanner(System.in);
-       
+    public static void main(String[] args)
+    {
+        String identitas = " Lantip Mukti Mumpuni / XR3 / 18";
+        tampilJudul(identitas);
+        String kalimat = tampilInput;
+        
+    }
+    private static String tampilInput()
+    {
+        Scanner sc = new Scanner(System.in);
+        
         System.out.println("Masukkan kalimat : ");
-        String kalimat = scanner.nextLine();
+        String kalimat = sc.nextLine();
         System.out.println("Kalimat Asli : " + kalimat);
         
         return kalimat;
     }
-}
+        
+    }
