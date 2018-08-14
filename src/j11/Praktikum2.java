@@ -11,5 +11,16 @@ public class Praktikum2 {
     {
         String identitas = " Lantip Mukti Mumpuni / XR3 / 18";
         tampilJudul(identitas);
+        String kalimat = tampilInput();
+    }
+    private static String tampilInput()
+    {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan kalimat : ");
+        String kalimat = sc.nextLine();
+        System.out.print("Kalimat Asli : " + kalimat);
+        
+        return kalimat;
     }
 }
