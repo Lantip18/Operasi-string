@@ -47,6 +47,24 @@ public class Praktikum1 {
         System.out.println("isi variable t tanpa spasi : \""+ t.trim() +"\"");
         
         System.out.println("gabungkan isi variable x dan r : "+ x.concat(r));
+        
+        System.out.println("karakter mulai posisi 3 di variable x : "+ x.substring(3));
+        
+        System.out.println("karakter dari posisi 3-5 di variable x : "+ x.substring(3,6));
+        
+        String tolean = t.trim();
+        System.out.println("isi variable tolean : "+ t.trim());
+        System.out.println("rubah 'i' jadi 'E' di variable tolean : "+ tolean.replace("i", "E"));
+        
+        String[] arrT = tolean.split("");
+        System.out.println("pecah kata di variable tolean : ");
+        for(int i=0; i<arrT.length;i++)
+            System.out.println(arrT[i]);
+        
+        String[] arrTr = tolean.split("r");
+        System.out.println("pecah berdasarkan huruf 'r' di variable tolean : ");
+        for(int i=0;i<arrTr.length;i++)
+            System.out.println(arrTr[i]);
     }
     
 }
